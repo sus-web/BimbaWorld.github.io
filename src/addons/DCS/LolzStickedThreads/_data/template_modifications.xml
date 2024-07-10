@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="forum_new_posts" modification_key="dcs_lst_sticked_threads" description="Add sticked threads to the list" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:macro template="whats_new_posts" name="filter_bar"
+			arg-findNew="{$findNew}"
+			arg-rerunRoute="forums/new-posts"
+			arg-rerunQuery="{{ {'f': $findNew.find_new_id} }}"
+			arg-filterRoute="forums/new-posts" />]]></find>
+    <replace><![CDATA[<xf:macro template="whats_new_posts" name="filter_bar"
+			arg-findNew="{$findNew}"
+			arg-rerunRoute="forums/new-posts"
+			arg-rerunQuery="{{ {'f': $findNew.find_new_id} }}"
+			arg-filterRoute="forums/new-posts" />
+<xf:macro template="dcs_sticked_threads" name="threads_list" arg-threads="{$sticked_threads}" />]]></replace>
+  </modification>
+</template_modifications>

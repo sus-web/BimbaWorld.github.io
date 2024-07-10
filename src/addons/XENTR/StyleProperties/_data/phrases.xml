@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="admin_navigation.xentrStyleProperties" version_id="1000070" version_string="1.0.0"><![CDATA[Style Properties]]></phrase>
+  <phrase title="admin_navigation.xtr_news_ticker_settings" version_id="1000070" version_string="1.0.0"><![CDATA[News ticker options]]></phrase>
+  <phrase title="admin_navigation.xtr_style_properties_settings" version_id="1000070" version_string="1.0.0"><![CDATA[General style options]]></phrase>
+  <phrase title="admin_navigation.xtr_user_reactions_settings" version_id="1000070" version_string="1.0.0"><![CDATA[User reactions options]]></phrase>
+  <phrase title="news_ticker_custom_widget_key" version_id="1000070" version_string="1.0.0"><![CDATA[Custom: Widget key]]></phrase>
+  <phrase title="option.xentr_carousel_slider_number" version_id="1000070" version_string="1.0.0"><![CDATA[Number of carousel sliders]]></phrase>
+  <phrase title="option.xentr_dbtech_credits" version_id="1000570" version_string="1.0.5"><![CDATA[Enabled dbtech credits]]></phrase>
+  <phrase title="option.xentr_dbtech_credits_icon" version_id="1000470" version_string="1.0.4"><![CDATA[Dbtech credits icon]]></phrase>
+  <phrase title="option.xentr_enable_members_online" version_id="1000070" version_string="1.0.0"><![CDATA[Show online members under page content]]></phrase>
+  <phrase title="option.xentr_messages" version_id="1000570" version_string="1.0.5"><![CDATA[Enabled messages]]></phrase>
+  <phrase title="option.xentr_messages_icon" version_id="1000470" version_string="1.0.4"><![CDATA[Messages icon]]></phrase>
+  <phrase title="option.xentr_new_ticker_speed" version_id="1000070" version_string="1.0.0"><![CDATA[New ticker speed]]></phrase>
+  <phrase title="option.xentr_news_ticker_custom_position" version_id="1000070" version_string="1.0.0"><![CDATA[News ticker custom position]]></phrase>
+  <phrase title="option.xentr_news_ticker_enable" version_id="1000070" version_string="1.0.0"><![CDATA[Enabled news ticker]]></phrase>
+  <phrase title="option.xentr_progress_bar" version_id="1000070" version_string="1.0.0"><![CDATA[Enable progress bar]]></phrase>
+  <phrase title="option.xentr_progress_bar_height" version_id="1000070" version_string="1.0.0"><![CDATA[Progress bar height]]></phrase>
+  <phrase title="option.xentr_question_solution" version_id="1000570" version_string="1.0.5"><![CDATA[Enabled question solution]]></phrase>
+  <phrase title="option.xentr_question_solution_icon" version_id="1000570" version_string="1.0.5"><![CDATA[Question solution icon]]></phrase>
+  <phrase title="option.xentr_reaction_score" version_id="1000570" version_string="1.0.5"><![CDATA[Enabled reaction score]]></phrase>
+  <phrase title="option.xentr_reaction_score_icon" version_id="1000470" version_string="1.0.4"><![CDATA[Reaction score icon]]></phrase>
+  <phrase title="option.xentr_trophy_points" version_id="1000570" version_string="1.0.5"><![CDATA[Enabled trophy points]]></phrase>
+  <phrase title="option.xentr_trophy_points_icon" version_id="1000470" version_string="1.0.4"><![CDATA[Trophy points icon]]></phrase>
+  <phrase title="option.xentr_typed_search" version_id="1000070" version_string="1.0.0"><![CDATA[Enable typed search]]></phrase>
+  <phrase title="option.xentr_typed_search_speed" version_id="1000070" version_string="1.0.0"><![CDATA[Typed search speed]]></phrase>
+  <phrase title="option.xentr_user_reaction_enable" version_id="1000570" version_string="1.0.5"><![CDATA[Enabled user reaction]]></phrase>
+  <phrase title="option.xentr_user_reaction_icon_size" version_id="1000070" version_string="1.0.0"><![CDATA[User reactions icon size]]></phrase>
+  <phrase title="option.xentr_visitor_card_enabled" version_id="1000570" version_string="1.0.5"><![CDATA[Enabled visitor card]]></phrase>
+  <phrase title="option.xtr_enable_canvas_effect" version_id="1000070" version_string="1.0.0"><![CDATA[Enable canvas effect]]></phrase>
+  <phrase title="option_explain.xentr_carousel_slider_number" version_id="1000070" version_string="1.0.0"><![CDATA[Here you can set the number of carousel sliders. Min 1 Max 3]]></phrase>
+  <phrase title="option_explain.xentr_dbtech_credits" version_id="1000470" version_string="1.0.4"><![CDATA[This option will be active if the dbtech credits add-on is installed.]]></phrase>
+  <phrase title="option_explain.xentr_dbtech_credits_icon" version_id="1000470" version_string="1.0.4"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xentr_enable_members_online" version_id="1000070" version_string="1.0.0"><![CDATA[If this option is enabled, online members will be displayed under the page content.]]></phrase>
+  <phrase title="option_explain.xentr_messages" version_id="1000470" version_string="1.0.4"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xentr_messages_icon" version_id="1000470" version_string="1.0.4"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xentr_new_ticker_speed" version_id="1000070" version_string="1.0.0"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xentr_news_ticker_custom_position" version_id="1000070" version_string="1.0.0"><![CDATA[<p>If you want to use the news ticker in a special area, paste the widget code below into the template you want to show. </p>
+<textarea class="input input--fitHeight" rows="1" readonly="readonly" data-xf-init="textarea-handler"><xf:if is="{$xf.options.xentr_news_ticker_enable} && {$xf.options.xentr_news_ticker_custom_position}"><xf:widget key="xtr_newsTicker" /></xf:if></textarea>]]></phrase>
+  <phrase title="option_explain.xentr_news_ticker_enable" version_id="1000070" version_string="1.0.0"><![CDATA[A news ticker is displayed above the forum overview.]]></phrase>
+  <phrase title="option_explain.xentr_progress_bar" version_id="1000070" version_string="1.0.0"><![CDATA[When you enable this option, a stylish progress bar will be displayed under the navigation menu.]]></phrase>
+  <phrase title="option_explain.xentr_progress_bar_height" version_id="1000070" version_string="1.0.0"><![CDATA[You can set the progress bar height value here. (Default 4px) Min=1 Max=10]]></phrase>
+  <phrase title="option_explain.xentr_question_solution" version_id="1000570" version_string="1.0.5"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xentr_question_solution_icon" version_id="1000570" version_string="1.0.5"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xentr_reaction_score" version_id="1000470" version_string="1.0.4"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xentr_reaction_score_icon" version_id="1000470" version_string="1.0.4"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xentr_trophy_points" version_id="1000470" version_string="1.0.4"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xentr_trophy_points_icon" version_id="1000470" version_string="1.0.4"><![CDATA[]]></phrase>
+  <phrase title="option_explain.xentr_typed_search" version_id="1000070" version_string="1.0.0"><![CDATA[To replace the phrases in the placeholder, find and replace them in your language pack. <br/><b>xentr_search_in_topics</b> <b>xentr_search_messages</b>, <b>xentr_search_in_members</b>, <b>xent_search_in_resources</b>]]></phrase>
+  <phrase title="option_explain.xentr_typed_search_speed" version_id="1000070" version_string="1.0.0"><![CDATA[Here you can set up typed search speed. Min=5
+Max=50]]></phrase>
+  <phrase title="option_explain.xentr_user_reaction_enable" version_id="1000070" version_string="1.0.0"><![CDATA[Here you can show user reactions under the user panel in the sidebar.]]></phrase>
+  <phrase title="option_explain.xentr_user_reaction_icon_size" version_id="1000070" version_string="1.0.0"><![CDATA[Here you can set the user reactions icon size.]]></phrase>
+  <phrase title="option_explain.xentr_visitor_card_enabled" version_id="1000070" version_string="1.0.0"><![CDATA[Allows user card to be displayed in the sidebar. User reactions are not shown if this option is not enabled.]]></phrase>
+  <phrase title="option_explain.xtr_enable_canvas_effect" version_id="1000070" version_string="1.0.0"><![CDATA[When this option is enabled, canvas effect is applied on the header background.]]></phrase>
+  <phrase title="option_group.xentr_newTicker" version_id="1000070" version_string="1.0.0"><![CDATA[XenTR News ticker]]></phrase>
+  <phrase title="option_group.xentr_styleProperties" version_id="1000070" version_string="1.0.0"><![CDATA[XenTR Style properties]]></phrase>
+  <phrase title="option_group.xentr_userReactions" version_id="1000070" version_string="1.0.0"><![CDATA[XenTR user reactions]]></phrase>
+  <phrase title="option_group_description.xentr_newTicker" version_id="1000070" version_string="1.0.0"><![CDATA[Those options are control the News Ticker.]]></phrase>
+  <phrase title="option_group_description.xentr_styleProperties" version_id="1000070" version_string="1.0.0"><![CDATA[Those options are control the XenTR style properties]]></phrase>
+  <phrase title="option_group_description.xentr_userReactions" version_id="1000070" version_string="1.0.0"><![CDATA[Those options are control the XenTR user reactions.]]></phrase>
+  <phrase title="total_threads" version_id="1000070" version_string="1.0.0"><![CDATA[Total threads]]></phrase>
+  <phrase title="widget_def.xentr_newsTicker_widget" version_id="1000070" version_string="1.0.0"><![CDATA[[XTR] Style Properties-NewsTicker]]></phrase>
+  <phrase title="widget_def_desc.xentr_newsTicker_widget" version_id="1000070" version_string="1.0.0"><![CDATA[Displays a ticker block containing a list of X threads which have most recently been created.]]></phrase>
+  <phrase title="xent_search_in_resources" version_id="1000070" version_string="1.0.0"><![CDATA[Search in resources...]]></phrase>
+  <phrase title="xentr_already_have_an_account_log_in_here" version_id="1000070" version_string="1.0.0"><![CDATA[Already have an account? Log in here.]]></phrase>
+  <phrase title="xentr_blue_bg_color" version_id="1000070" version_string="1.0.0"><![CDATA[Blue]]></phrase>
+  <phrase title="xentr_create_an_account_on_our_community_its_easy" version_id="1000070" version_string="1.0.0"><![CDATA[Create an account on our community. It's easy!]]></phrase>
+  <phrase title="xentr_create_an_account_or_login_to_comment" version_id="1000070" version_string="1.0.0"><![CDATA[Create an account or login to comment]]></phrase>
+  <phrase title="xentr_dark_bg_color" version_id="1000070" version_string="1.0.0"><![CDATA[Dark]]></phrase>
+  <phrase title="xentr_green_bg_color" version_id="1000070" version_string="1.0.0"><![CDATA[Green]]></phrase>
+  <phrase title="xentr_guest_message_description" version_id="1000070" version_string="1.0.0"><![CDATA[Join us now to get access to all our features. Once registered and logged in, you will be able to create topics, post replies to existing threads, give reputation to your fellow members, get your own private messenger, and so, so much more. It's also quick and totally free, so what are you waiting for?]]></phrase>
+  <phrase title="xentr_guest_message_title" version_id="1000070" version_string="1.0.0"><![CDATA[Welcome to]]></phrase>
+  <phrase title="xentr_latest_thread" version_id="1000170" version_string="1.0.1"><![CDATA[Latest Thread]]></phrase>
+  <phrase title="xentr_orange_bg_color" version_id="1000070" version_string="1.0.0"><![CDATA[Orange]]></phrase>
+  <phrase title="xentr_red_bg_color" version_id="1000070" version_string="1.0.0"><![CDATA[Red]]></phrase>
+  <phrase title="xentr_search_in_members" version_id="1000070" version_string="1.0.0"><![CDATA[Search in members...]]></phrase>
+  <phrase title="xentr_search_in_topics" version_id="1000070" version_string="1.0.0"><![CDATA[Search in topics...]]></phrase>
+  <phrase title="xentr_search_messages" version_id="1000070" version_string="1.0.0"><![CDATA[Search messages...]]></phrase>
+  <phrase title="xentr_slate_bg_color" version_id="1000070" version_string="1.0.0"><![CDATA[Slate]]></phrase>
+  <phrase title="xentr_voilet_bg_color" version_id="1000070" version_string="1.0.0"><![CDATA[Voilet]]></phrase>
+  <phrase title="xtr_all_users" version_id="1000070" version_string="1.0.0"><![CDATA[All users]]></phrase>
+  <phrase title="xtr_current_forum" version_id="1000070" version_string="1.0.0"><![CDATA[Current all forum]]></phrase>
+  <phrase title="xtr_current_forum_and_its_child_nodes" version_id="1000070" version_string="1.0.0"><![CDATA[Current all forum and child nodes]]></phrase>
+  <phrase title="xtr_custom" version_id="1000070" version_string="1.0.0"><![CDATA[Select custom]]></phrase>
+  <phrase title="xtr_custom_user" version_id="1000070" version_string="1.0.0"><![CDATA[Custom user]]></phrase>
+  <phrase title="xtr_latest_replies" version_id="1000070" version_string="1.0.0"><![CDATA[Latest replies]]></phrase>
+  <phrase title="xtr_latest_unread" version_id="1000070" version_string="1.0.0"><![CDATA[Latest unread]]></phrase>
+  <phrase title="xtr_select_type" version_id="1000070" version_string="1.0.0"><![CDATA[Select filter type to news ticker.]]></phrase>
+  <phrase title="xtr_sticky_threads" version_id="1000070" version_string="1.0.0"><![CDATA[Sticky threads]]></phrase>
+  <phrase title="xtr_threads_sources" version_id="1000070" version_string="1.0.0"><![CDATA[Select threads sources]]></phrase>
+  <phrase title="xtr_threads_time_explain" version_id="1000070" version_string="1.0.0"><![CDATA[Enter the number of days to cut off the list of threads. Select all If you want to include all threads from beginning.]]></phrase>
+  <phrase title="xtr_threads_user" version_id="1000070" version_string="1.0.0"><![CDATA[Threads user(s)]]></phrase>
+  <phrase title="xtr_threads_user_explain" version_id="1000070" version_string="1.0.0"><![CDATA[Only include threads by...]]></phrase>
+  <phrase title="xtr_time_lapse" version_id="1000070" version_string="1.0.0"><![CDATA[Thread Date Cut Off (days)]]></phrase>
+</phrases>

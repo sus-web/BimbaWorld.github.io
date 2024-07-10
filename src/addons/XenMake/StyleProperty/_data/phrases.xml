@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="option.xm_node_image_enable" version_id="1000370" version_string="1.0.3"><![CDATA[Enable node images]]></phrase>
+  <phrase title="option_explain.xm_node_image_enable" version_id="1000370" version_string="1.0.3"><![CDATA[<div class="blockMessage blockMessage--success" style="margin: 0 2px;">This option applies to specific node layouts specified from style properties.</div>]]></phrase>
+  <phrase title="option_group.xmStyleProperty" version_id="1000270" version_string="1.0.2"><![CDATA[[XM] XenMake Style Properties]]></phrase>
+  <phrase title="option_group_description.xmStyleProperty" version_id="1000270" version_string="1.0.2"><![CDATA[Customizable and advanced style features options.]]></phrase>
+  <phrase title="xentr_checkmark_conversation_read" version_id="1000170" version_string="1.0.1"><![CDATA[Conversation as read]]></phrase>
+  <phrase title="xm_block_header_explain" version_id="1000370" version_string="1.0.3"><![CDATA[Select the image you want to show in the category blocks. The image you select will apply to the category blocks.]]></phrase>
+  <phrase title="xm_block_header_image" version_id="1000370" version_string="1.0.3"><![CDATA[Category block header image]]></phrase>
+  <phrase title="xm_no_block_header_image" version_id="1000370" version_string="1.0.3"><![CDATA[No images were selected for the category block header]]></phrase>
+  <phrase title="xm_node_background_description" version_id="1000170" version_string="1.0.1"><![CDATA[Enter the image URLs to display for dual column mode. This feature works only if the "<b>Dual column image</b>" option in the XenMake Style Properties is active. Please make sure if it's enabled or not in ↓├ XenMake ┤ Node/Forum list area.
+<p>You can also upload your images to the default directory specified below..</p>
+<textarea class="input input--fitHeight" rows="1" readonly="readonly" data-xf-init="textarea-handler">styles/xenmake/resources/images/nodes/your_image.jpg</textarea>]]></phrase>
+  <phrase title="xm_select_category_image" version_id="1000370" version_string="1.0.3"><![CDATA[Select the category header image]]></phrase>
+  <phrase title="xtr_link_node_image_description" version_id="1000270" version_string="1.0.2"><![CDATA[Select the image you want to show in the links nodes. The image you select will apply to the forum link nodes.]]></phrase>
+  <phrase title="xtr_new" version_id="1000270" version_string="1.0.2"><![CDATA[New]]></phrase>
+  <phrase title="xtr_no_image_link_node" version_id="1000270" version_string="1.0.2"><![CDATA[No images were selected for the link node.]]></phrase>
+  <phrase title="xtr_no_image_node" version_id="1000270" version_string="1.0.2"><![CDATA[No images were selected for the node.]]></phrase>
+  <phrase title="xtr_no_image_page_node" version_id="1000270" version_string="1.0.2"><![CDATA[No images were selected for the page node.]]></phrase>
+  <phrase title="xtr_node_image" version_id="1000270" version_string="1.0.2"><![CDATA[Node block image]]></phrase>
+  <phrase title="xtr_node_image_description" version_id="1000270" version_string="1.0.2"><![CDATA[Select the image you want to show in the forum nodes. The image you select will apply to the forum nodes.]]></phrase>
+  <phrase title="xtr_open_background_chooser" version_id="1000270" version_string="1.0.2"><![CDATA[Open Background Chooser]]></phrase>
+  <phrase title="xtr_page_node_image_description" version_id="1000270" version_string="1.0.2"><![CDATA[Select the image you want to show in the page nodes. The image you select will apply to the forum page nodes.]]></phrase>
+  <phrase title="xtr_select_link_node_image" version_id="1000270" version_string="1.0.2"><![CDATA[Select the link node image]]></phrase>
+  <phrase title="xtr_select_node_image" version_id="1000270" version_string="1.0.2"><![CDATA[Select the node image]]></phrase>
+  <phrase title="xtr_select_page_node_image" version_id="1000270" version_string="1.0.2"><![CDATA[Select the page node image]]></phrase>
+</phrases>

@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "[XTR] Style Properties",
+    "description": "This addon adds extra options to styles developed by XENTR.",
+    "version_id": 1000570,
+    "version_string": "1.0.5",
+    "dev": "XENTR | XenForo Add-ons - Styles",
+    "dev_url": "https://xentr.net/",
+    "faq_url": "",
+    "support_url": "https://xentr.net/",
+    "extra_urls": [],
+    "require": [],
+    "icon": "icon.png"
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="public" title="dcs_next_group_widget" version_id="1000000" version_string="1.0.0"><![CDATA[<xf:css>
+
+.counterIcon {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.likeCounterIcon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' stroke='rgb(140,140,140)' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round' class='css-i6dzq1'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'%3E%3C/path%3E%3C/svg%3E");
+}
+	
+.postCounterIcon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' stroke='rgb(140,140,140)' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round' class='css-i6dzq1'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.nextGroup {
+	margin-top: 20px;
+	margin-left: 10px;
+	}
+
+.accountUpgradesButton {
+	margin-top: 20px
+	margin-bottom: 10px
+	}
+	
+</xf:css>
+
+<xf:set var="$like_icon"><span class="counterIcon likeCounterIcon"></span></xf:set>
+<xf:set var="$messages_icon"><span class="counterIcon postCounterIcon"></span></xf:set>
+
+<xf:if is="$xf.visitor.user_id">
+<div class="block" {{ widget_data($widget) }}>
+        <div class="block-container">
+            <h3 class="block-minorHeader">
+				<div class="contentRow">
+					<div class="contentRow-figure">
+						<xf:avatar user="$user" size="xs"/>
+					</div>
+					<div class='contentRow-main'>
+						<xf:username user="$user" rich="true"/>
+						<div class="contentRow-minor">
+							<xf:usertitle user="$user"/>
+						</div>
+					</div>
+				</div>
+            </h3>
+			<div class="userStats" style="display: flex; margin-left: 5px; margin-top: 2px;">
+				<div class="likes" style="margin-left: 10px; margin-right: 60px;" title="Ваше кол-во реакций" data-xf-init='tooltip'>
+					{$like_icon}
+					<span style="font-weight: bold;">{$user.reaction_score|number}</span>
+				</div>
+				<div class="messages" title="Ваше кол-во сообщений" data-xf-init='tooltip'>
+					{$messages_icon}
+					<span style="font-weight: bold;">{$user.message_count|number}</span>
+				</div>
+			</div>
+			<xf:if is="!{$next} == 0">
+			<div style="margin-left: 10px; margin-top: 10px;">
+				{$phrase}
+			</div>
+			<div class="nextGroup">
+				Следующая группа: <br> <strong>{$next_title.title}</strong>
+			</div>
+			</xf:if>
+			<div style="text-align: center; margin-top: 10px; margin-bottom: 10px;">
+				<xf:button href="{{ link('account/upgrades') }}" class="accountUpgradesButton">Платное повышения прав</xf:button>
+			</div>
+        </div>
+</div>
+</xf:if>]]></template>
+</templates>

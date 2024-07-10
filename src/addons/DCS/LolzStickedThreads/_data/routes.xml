@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<routes>
+  <route route_type="admin" route_prefix="dcs-sticked-threads" sub_name="list" format="list/:int&lt;count&gt;/" controller="DCS\LolzStickedThreads:ThreadsList"/>
+</routes>

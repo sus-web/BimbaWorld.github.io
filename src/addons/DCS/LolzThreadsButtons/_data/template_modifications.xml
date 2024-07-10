@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="post_macros" modification_key="dcs_ltb_buttons" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<div class="menu" data-menu="menu" aria-hidden="true" data-menu-builder="actionBar">
+					<div class="menu-content">
+						<h4 class="menu-header">{{ phrase('more_options') }}</h4>
+						<div class="js-menuBuilderTarget"></div>
+					</div>
+				</div>
+			</xf:if>]]></find>
+    <replace><![CDATA[<div class="menu" data-menu="menu" aria-hidden="true" data-menu-builder="actionBar">
+					<div class="menu-content">
+						<h4 class="menu-header">{{ phrase('more_options') }}</h4>
+						<div class="js-menuBuilderTarget"></div>
+					</div>
+				</div>
+			</xf:if>
+<div style="margin-top: 10px">
+				<xf:if is="$post.position == 0">
+					<xf:if contentcheck="true">
+					<xf:contentcheck>
+						<xf:set var="$set" value="{$post.User.Profile.custom_fields}" />
+						<xf:foreach loop="$xf.app.getCustomFields('users', 'contact', {{ null }}, {{ ['profile'] }})" key="$fieldId" value="$fieldDefinition">
+							<xf:if is="$fieldDefinition.hasValue({$set.{$fieldDefinition.field_id}})">
+								<xf:set var="$fieldValue"><xf:macro template="custom_fields_macros" name="custom_field_value"
+									arg-definition="{$fieldDefinition}"
+									arg-value="{$set.{$fieldDefinition.field_id}}" /></xf:set>
+
+								<xf:if is="$fieldDefinition.wrapper_template">
+									<xf:button href="{$set.{$fieldDefinition.field_id}}" target="_blank">{$fieldDefinition.getFormattedOutput($fieldValue)|raw}</xf:button>
+									
+								<xf:else />
+										
+										<xf:if is="$fieldDefinition.match_type == 'url'">
+											<xf:button href="{$set.{$fieldDefinition.field_id}}" target="_blank">{$fieldDefinition.title}</xf:button>
+										</xf:if>
+								</xf:if>
+							</xf:if>
+						</xf:foreach>
+                    </xf:contentcheck>
+						</xf:if>
+				</xf:if>
+			</div>]]></replace>
+  </modification>
+</template_modifications>

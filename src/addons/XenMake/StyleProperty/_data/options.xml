@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="xm_node_image_enable" edit_format="onoff" data_type="boolean">
+    <default_value>1</default_value>
+    <relation group_id="xmStyleProperty" display_order="10"/>
+  </option>
+</options>
