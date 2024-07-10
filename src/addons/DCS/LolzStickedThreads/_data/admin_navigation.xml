@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<admin_navigation>
-  <admin_navigation_entry navigation_id="dcsStickedThreads" display_order="289" link="dsc-sticked-threads" icon="fa-bullhorn" debug_only="0" development_only="0" hide_no_children="1"/>
-  <admin_navigation_entry navigation_id="dcsStickedThreadsList" parent_navigation_id="dcsStickedThreads" display_order="70" link="dcs-sticked-threads/list" debug_only="0" development_only="0" hide_no_children="0"/>
-</admin_navigation>

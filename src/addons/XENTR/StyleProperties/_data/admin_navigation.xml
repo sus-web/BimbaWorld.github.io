@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<admin_navigation>
-  <admin_navigation_entry navigation_id="xentrStyleProperties" display_order="13000" link="style-properties" icon="fas fa-palette" debug_only="0" development_only="0" hide_no_children="0"/>
-  <admin_navigation_entry navigation_id="xtr_news_ticker_settings" parent_navigation_id="xentrStyleProperties" display_order="150" link="options/groups/xentr_newTicker/" debug_only="0" development_only="0" hide_no_children="0"/>
-  <admin_navigation_entry navigation_id="xtr_style_properties_settings" parent_navigation_id="xentrStyleProperties" display_order="100" link="options/groups/xentr_styleProperties/" debug_only="0" development_only="0" hide_no_children="0"/>
-  <admin_navigation_entry navigation_id="xtr_user_reactions_settings" parent_navigation_id="xentrStyleProperties" display_order="200" link="options/groups/xentr_userReactions/" debug_only="0" development_only="0" hide_no_children="0"/>
-</admin_navigation>

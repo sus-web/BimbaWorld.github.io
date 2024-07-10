@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<phrases>
-  <phrase title="my_threads" version_id="1000000" version_string="1.0.0"><![CDATA[ My Threads]]></phrase>
-  <phrase title="this_user_does_not_exist" version_id="1000000" version_string="1.0.0"><![CDATA[This user does not exist!]]></phrase>
-  <phrase title="threads_by_user" version_id="1000000" version_string="1.0.0"><![CDATA[Threads by {user}]]></phrase>
-</phrases>

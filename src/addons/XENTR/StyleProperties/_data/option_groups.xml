@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<option_groups>
-  <group group_id="xentr_newTicker" icon="fas fa-bullhorn" display_order="15100" debug_only="0"/>
-  <group group_id="xentr_styleProperties" icon="fas fa-palette" display_order="15000" debug_only="0"/>
-  <group group_id="xentr_userReactions" icon="fas fa-thumbs-up" display_order="15200" debug_only="0"/>
-</option_groups>
