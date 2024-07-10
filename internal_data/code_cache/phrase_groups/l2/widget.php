@@ -1,0 +1,22 @@
+<?php
+return array (
+  'widget.forum_overview_forum_statistics' => '',
+  'widget.forum_overview_members_online' => '',
+  'widget.forum_overview_new_posts' => '',
+  'widget.forum_overview_new_profile_posts' => '',
+  'widget.forum_overview_share_page' => '',
+  'widget.latest_followed_profile_posts' => 'Latest profile posts by followers',
+  'widget.latest_posts' => 'Последние сообщения',
+  'widget.latest_profile_posts' => 'Сообщения профилей',
+  'widget.latest_watched' => 'Последнее отслеживаемое',
+  'widget.member_wrapper_find_member' => '',
+  'widget.member_wrapper_newest_members' => '',
+  'widget.online_list_online_statistics' => '',
+  'widget.thuix_footer_aboutUsWidget' => 'About us',
+  'widget.thuix_footer_quickNavWidget' => 'Quick navigation',
+  'widget.thuix_footer_userNavWidget' => 'User menu',
+  'widget.unread_posts' => 'Непрочитанные сообщения',
+  'widget.whats_new_new_posts' => '',
+  'widget.whats_new_new_profile_posts' => '',
+  'widget.xtr_newsTicker' => '',
+);

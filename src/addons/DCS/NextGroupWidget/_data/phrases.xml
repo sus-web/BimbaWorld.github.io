@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="get_x_message_count" version_id="1000000" version_string="1.0.0"><![CDATA[Набери еще <strong>{x}</strong> {messages} для следующего повышения.]]></phrase>
+  <phrase title="get_x_reaction_score" version_id="1000000" version_string="1.0.0"><![CDATA[Набери еще <strong>{x}</strong> {reactions} для следующего повышения.]]></phrase>
+  <phrase title="get_x_trophy_points" version_id="1000000" version_string="1.0.0"><![CDATA[Набери еще <strong>{x}</strong> {trophy_points} для следующего повышения.]]></phrase>
+  <phrase title="widget_def.dcs_next_group" version_id="1000000" version_string="1.0.0"><![CDATA[[DevCore Studios] Next Group]]></phrase>
+  <phrase title="widget_def_desc.dcs_next_group" version_id="1000000" version_string="1.0.0"><![CDATA[]]></phrase>
+</phrases>

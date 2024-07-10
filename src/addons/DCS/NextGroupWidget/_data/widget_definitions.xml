@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget_definitions>
+  <widget_definition definition_id="dcs_next_group" definition_class="DCS\NextGroupWidget\Widget\NextGroup"/>
+</widget_definitions>

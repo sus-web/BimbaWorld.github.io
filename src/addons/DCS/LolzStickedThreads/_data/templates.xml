@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="dcs_sticked_threads_list_add" version_id="1000000" version_string="1.0.0"><![CDATA[<xf:title>{{ phrase("dcs_add_thread") }}</xf:title>
+
+<xf:form action="{{ link('dcs-sticked-threads/list/add-thread') }}" class="block" ajax="true">
+<div class="block">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:textboxrow name="name" required="true"
+						   label="{{ phrase('dcs_name') }}"/>
+			<xf:textboxrow name="link" required="true"
+						   label="{{ phrase('dcs_link') }}"/>
+		</div>
+		<xf:submitrow sticky="true" icon="save" />
+	</div>
+</div>
+</xf:form>]]></template>
+  <template type="admin" title="dcs_sticked_threads_list_index" version_id="1000000" version_string="1.0.0"><![CDATA[<xf:macro name="row" arg-entity="!">
+		<xf:datarow>
+			<xf:main href="{{ link('dcs-sticked-threads/list/view', $entity) }}"
+					 label="{$entity.name}"
+					 hash="{$entity.count}"
+					 dir="auto">
+				<xf:explain>
+				<ul class="listInline listInline--bullet">
+					<li>{{ phrase("dcs_thread") }} #{$entity.count}</li>
+					<li>{$entity.link}</li>
+				</ul>
+			</xf:explain>
+			
+			</xf:main>
+			<xf:delete href="{{ link('dcs-sticked-threads/list/delete', $entity) }}"
+								   tooltip="{{ phrase('delete') }} " />
+		</xf:datarow>
+	
+</xf:macro>
+
+<xf:pageaction>
+	<xf:button href="{{ link('dcs-sticked-threads/list/add') }}" icon="add">{{ phrase("dcs_add_thread") }}</xf:button>
+</xf:pageaction>
+
+<xf:title>{{ phrase('admin_navigation.dcsStickedThreadsList') }}</xf:title>
+
+<xf:macro name="full_block" arg-parentTemplate="!" arg-blockOuterMacro="" arg-searchFilterUrl=""
+		  arg-blockBodyBefore="" arg-blockBodyAfter=""
+		  arg-entities="!" arg-entityRow="!"
+		  arg-total="!" arg-perPage="!" arg-page="">
+	<div class="block">
+		<div class="block-outer">
+			<div class="block-outer-main">
+				<xf:if is="$blockOuterMacro">
+					<xf:macro template="{$parentTemplate}" name="{$blockOuterMacro}" />
+				</xf:if>
+			</div>
+
+			<xf:if is="$searchFilterUrl">
+				<xf:macro template="filter_macros" name="quick_filter"
+					arg-key="{$parentTemplate}"
+					arg-ajax="{$searchFilterUrl}"
+					arg-class="block-outer-opposite" />
+			</xf:if>
+		</div>
+
+		<div class="block-container">
+			<xf:if is="$blockBodyBefore">
+				<xf:macro template="{$parentTemplate}" name="{$blockBodyBefore}" />
+			</xf:if>
+
+			<div class="block-body">
+				<xf:datalist>
+					<xf:macro name="list" arg-entities="{$entities}" arg-page="{$page}"
+							  arg-parentTemplate="{$parentTemplate}" arg-entityRow="{$entityRow}" />
+
+					<xf:if is="$filter AND $total > $perPage">
+						<xf:datarow rowclass="dataList-row--note dataList-row--noHover js-filterForceShow">
+							<xf:cell colspan="2">{{ phrase('more_records_matching_filter_more_specific') }}</xf:cell>
+						</xf:datarow>
+					</xf:if>
+				</xf:datalist>
+			</div>
+
+			<div class="block-footer">
+				<span class="block-footer-counter">{{ display_totals($entities, $total) }}</span>
+			</div>
+
+			<xf:if is="$blockBodyAfter">
+				<xf:macro template="{$parentTemplate}" name="{$blockBodyAfter}"
+						  arg-entities="{$entities}" arg-total="{$total}"
+						  arg-perPage="{$perPage}" arg-page="{$page}" />
+			</xf:if>
+		</div>
+	</div>
+
+	<xf:pagenav
+		page="{$page}" perpage="{$perPage}" total="{$total}"
+		link="{$searchFilterUrl}"
+		params=""
+		data="{$style}"
+		wrapperclass="js-filterHide block-outer block-outer--after" />
+</xf:macro>
+
+<xf:macro name="list" arg-entities="!" arg-page="!" arg-parentTemplate="!" arg-entityRow="!">
+	<xf:foreach loop="$entities" value="$entity">
+		<xf:macro template="{$parentTemplate}" name="{$entityRow}" arg-entity="{$entity}" />
+	</xf:foreach>
+</xf:macro>
+
+<xf:macro name="full_block" arg-parentTemplate="dcs_sticked_threads_list_index"
+		  arg-searchFilterUrl="{$searchFilterUrl}" arg-entities="{$threads}" arg-entityRow="row"
+		  arg-total="{$total}" arg-perPage="{$perPage}" arg-page="{$page}" />]]></template>
+  <template type="admin" title="dcs_sticked_threads_list_view" version_id="1000000" version_string="1.0.0"><![CDATA[<xf:title>{{ phrase("dcs_thread") }} #{$thread.count}</xf:title>
+
+<xf:form action="{{ link('dcs-sticked-threads/list/save', $thread) }}" class="block" ajax="true">
+<div class="block">
+	<div class="block-container">
+		<div class="block-body">
+				<xf:textboxrow name="name" value="{$thread.name}" required="true"
+						   label="{{ phrase('dcs_name') }}"/>
+				<xf:textboxrow name="link" value="{$thread.link}" required="true"
+						   label="{{ phrase('dcs_link') }}"/>
+		</div>
+	<xf:submitrow sticky="true" icon="save" />
+	</div>
+</div>
+</xf:form>]]></template>
+  <template type="public" title="dcs_sticked_threads" version_id="1000000" version_string="1.0.0"><![CDATA[<xf:macro name="threads_list"
+		  arg-threads="!">
+<xf:css>
+.svgIcon.left {
+    margin-right: 3px;
+}
+.stackIcon::before {
+    width: 22px;
+    height: 22px;
+    background-image: url("data:image/svg+xml,%3Csvg width='50' height='51' viewBox='0 0 50 51' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.49236 33.8109C8.84265 33.8109 8.35512 34.4044 8.48213 35.0416C8.81321 36.7026 9.39417 39.6255 9.68139 41.1202C10.0967 43.2817 11.3449 44.1065 13.0642 44.1065C14.9471 44.1065 16.4734 42.5802 16.4734 40.6974V34.8405C16.4734 34.2719 16.0125 33.8109 15.4439 33.8109H9.49236Z' fill='rgb(80,80,80)'/%3E%3Cpath d='M8.23682 17.3379C4.82515 17.3379 2.05945 20.1036 2.05945 23.5153C2.05945 26.927 4.82515 29.6927 8.23682 29.6927C11.3255 29.6927 12.3551 29.6927 15.4438 29.6927C16.0124 29.6927 16.4733 29.2317 16.4733 28.6631V18.3675C16.4733 17.7989 16.0124 17.3379 15.4438 17.3379C12.3551 17.3379 11.3255 17.3379 8.23682 17.3379Z' fill='rgb(80,80,80)'/%3E%3Cpath d='M21.2285 15.5469C20.8462 15.7177 20.5916 16.0925 20.5916 16.5113V30.5194C20.5916 30.9381 20.8462 31.3129 21.2285 31.4837C21.9799 31.8194 22.7129 32.201 23.4231 32.6271L32.8866 38.3052C35.6315 39.9521 39.1237 37.9749 39.1237 34.7738V12.2568C39.1237 9.05572 35.6315 7.07849 32.8866 8.72544L23.4231 14.4035C22.7129 14.8297 21.9799 15.2112 21.2285 15.5469Z' fill='rgb(80,80,80)'/%3E%3Cpath d='M43.2418 21.4562C43.2418 20.3189 44.1637 19.397 45.3009 19.397V19.397C46.4382 19.397 47.3601 20.3189 47.3601 21.4562V25.5744C47.3601 26.7116 46.4382 27.6335 45.3009 27.6335V27.6335C44.1637 27.6335 43.2418 26.7116 43.2418 25.5744V21.4562Z' fill='rgb(80,80,80)'/%3E%3C/svg%3E%0A");
+}
+.svgIcon::before {
+    background-size: 100%;
+    display: inline-block;
+    content: '';
+    vertical-align: middle;
+}
+
+.bold {
+		font-weight: 600;
+}
+		
+		
+.discussionListItem {
+	font-size: 17px;
+    position: relative;
+    border-radius: 10px;
+    transition: background .15s;
+	text-decoration: none;
+	
+}
+		
+.text_Ads .discussionListItem.item {
+    line-height: 3px;
+    display: block;
+    text-decoration: none;
+}
+		
+.discussionListItem .title {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    padding-left: 1px;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+}
+		
+.text_Ads {
+		padding: 10px;
+}
+		
+.text_Ads .discussionListItem.item .title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-decoration: none;
+}
+</xf:css>
+<xf:set var="$icon"><span class="svgIcon left stackIcon"></span></xf:set>
+				<xf:if is="{{ count($threads) }} > 0">
+				<xf:if contentcheck="true">
+				<xf:contentcheck>
+						<div class="text_Ads">
+							<xf:foreach loop="$threads" value="$thread">
+								<a class="discussionListItem item" href="{$thread.link}" target="_blank">
+								<span class="title bold">
+									{$icon}
+									{$thread.name}
+								</span>
+							</a>
+							</xf:foreach>
+						</div>
+				</xf:contentcheck>
+				</xf:if>
+				</xf:if>
+</xf:macro>]]></template>
+</templates>

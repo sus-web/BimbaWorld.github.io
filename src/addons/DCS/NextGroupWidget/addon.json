@@ -1,0 +1,16 @@
+{
+    "legacy_addon_id": "",
+    "title": "[DevCore Studios] Next Group Widget",
+    "description": "Аддон добавляет виджет следующего повышения, как на LZT, в стандартной иерархии пользователей для XenForo",
+    "version_id": 1000000,
+    "version_string": "1.0.0",
+    "dev": "DevCore Studios",
+    "dev_url": "https://zelenka.guru/tosa",
+    "faq_url": "https://zelenka.guru/tosa",
+    "support_url": "https://zelenka.guru/tosa",
+    "extra_urls": {
+        "Наш форум": "https://devcore.fun"
+    },
+    "require": [],
+    "icon": ""
+}
